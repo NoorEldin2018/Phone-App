@@ -1,11 +1,16 @@
-import React from 'react'
-import UsersList from '../UsersList/UsersList'
+import React from "react";
+import UsersList from "../UsersList/UsersList";
 
-const List = ({users,deleteHandler}) => {
-    const usersList = users.map((el,id) => <UsersList deleteHandler={deleteHandler} key={id} {...el} />)
-  return (
-    <>{usersList}</>
-  )
-}
+const List = ({ users, deleteHandler, editHandlerUser }) => {
+  const usersList = users.map((el, id) => (
+    <UsersList
+      deleteHandler={deleteHandler}
+      editHandlerUser={editHandlerUser}
+      key={id}
+      {...el}
+    />
+  ));
+  return <>{usersList}</>;
+};
 
-export default List
+export default List;
