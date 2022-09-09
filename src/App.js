@@ -43,7 +43,6 @@ function App() {
   return (
     <>
       <Container>
-        {/* <button onClick={toggleHandler} >Insert User</button> */}
         <Button onClick={toggleHandler}>Insert User</Button>
         <input
           type="text"

@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./UsersList.module.css";
 
-// const UsersList = ({name,...rest}) => {
 const UsersList = ({
   name,
   city,
